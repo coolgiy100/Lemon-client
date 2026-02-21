@@ -21,13 +21,6 @@ public class CameraTweaks extends Module {
 
     // General
 
-    private final Setting<Boolean> clip = sgGeneral.add(new BoolSetting.Builder()
-        .name("clip")
-        .description("Allows the camera to clip through blocks.")
-        .defaultValue(true)
-        .build()
-    );
-
     private final Setting<Double> cameraDistance = sgGeneral.add(new DoubleSetting.Builder()
         .name("camera-distance")
         .description("The distance the third person camera is from the player.")
