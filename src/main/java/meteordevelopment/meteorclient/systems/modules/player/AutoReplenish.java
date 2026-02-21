@@ -115,6 +115,9 @@ public class AutoReplenish extends Module {
         for (int i = 0; i < 9; i++) {
             ItemStack stack = mc.player.getInventory().getStack(i);
             checkSlot(i, stack);
+            // Block all potions (Instant Health, Strength, etc.)
+if (stack.getItem() instanceof net.minecraft.item.PotionItem) return;
+if (prevStack.getItem() instanceof net.minecraft.item.PotionItem) return;
         }
 
         // Offhand
