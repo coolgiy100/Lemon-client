@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "name": "Lemon Client",
-  "id": "meteor-client",
-  "version": "${version}",
+  "id": "Lemon-client",
+  "version": "1.0,
   "description": "utility mod.",
   "authors": [
-    "MineGame159",
+    "meteor client by MineGame159",
     "squidoodly",
     "seasnail",
     "modified by Spritzed"
@@ -37,8 +37,6 @@
     "meteor-client:color": "145,61,226",
     "meteor-client:commit": "${commit}",
     "modmenu": {
-      "links": {
-        "modmenu.discord": "https://meteorclient.com/discord"
       }
     },
     "badoptimizations:cache_hooks": {
