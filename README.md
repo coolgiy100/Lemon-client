@@ -1,10 +1,5 @@
 
-<p align="center">
-<img src="<img width="564" height="564" alt="image" src="https://github.com/user-attachments/assets/23671f39-6eda-4dab-b06f-116642f68d0b" />
-" alt="meteor-client-logo" width="15%"/>
-</p>
-
-<h1 align="center">Lemon</h1>
+<h1 align="center">Lemon Client</h1>
 <p align="center">A Minecraft Fabric Utility Mod.</p>
 
 
