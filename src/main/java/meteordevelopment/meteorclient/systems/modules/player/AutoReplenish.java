@@ -119,8 +119,12 @@ public class AutoReplenish extends Module {
 
         // Offhand
         if (offhand.get() && !Modules.get().get(AutoTotem.class).isLocked()) {
-            ItemStack stack = mc.player.getOffHandStack();
-            checkSlot(9, stack);
+    ItemStack stack = mc.player.getOffHandStack();
+
+    // Skips totems completely
+    if (stack.getItem() == Items.TOTEM_OF_UNDYING) return;
+
+    checkSlot(9, stack);
         }
 
         tickDelayLeft = tickDelay.get();
@@ -129,6 +133,8 @@ public class AutoReplenish extends Module {
     private void checkSlot(int slot, ItemStack stack) {
         ItemStack prevStack = items[slot];
         items[slot] = stack.copy();
+        //  Never replenish totems
+if (stack.getItem() == Items.TOTEM_OF_UNDYING || prevStack.getItem() == Items.TOTEM_OF_UNDYING) return;
 
         if (slot == 9) slot = SlotUtils.OFFHAND;
         
